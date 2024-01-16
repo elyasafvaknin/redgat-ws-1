@@ -27,3 +27,6 @@ readinessProbe:
 volume:
   mount:
     path: /tmp/html
+
+mylibchart:
+  configmap: 
