@@ -5,11 +5,11 @@ type: application
 dependencies:
   - name: elyasafvaknin-hello-world
     repository: oci://ghcr.io/elyasafvaknin/helm
-    version: "1.0.3"
+    version: "1.0.4"
     alias: deploy1
   - name: elyasafvaknin-hello-world
     repository: oci://ghcr.io/elyasafvaknin/helm
-    version: "1.0.3"
+    version: "1.0.4"
     alias: deploy2
-version: 1.0.3
-appVersion: "1.0.3"
+version: 1.0.4
+appVersion: "1.0.4"
