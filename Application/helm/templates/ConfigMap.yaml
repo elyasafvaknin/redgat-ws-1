@@ -3,5 +3,7 @@ kind: ConfigMap
 metadata:
   name: '{{ .Chart.Name }}-html'
 immutable: false
+annotations:
+  argocd.argoproj.io/sync-wave: '{{ .Values.argocd.syncwave.configmap }}'
 data:
 {{ (.Files.Glob "html/*").AsConfig | indent 2 }}
