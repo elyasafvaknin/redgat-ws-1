@@ -7,3 +7,23 @@ containers:
 
 service:
   servicePort: 8080
+
+livenessProbe:
+  path: "/healthz"
+  initialDelaySeconds: 3
+  timeoutSeconds: 
+  periodSeconds: 3
+  successThreshold:
+  failureThreshold:
+
+readinessProbe:
+  path: "/healthz"
+  initialDelaySeconds: 3
+  timeoutSeconds: 
+  periodSeconds: 3
+  successThreshold:
+  failureThreshold:
+
+volume:
+  mount:
+    path: /tmp/html
