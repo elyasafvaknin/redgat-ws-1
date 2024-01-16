@@ -10,16 +10,16 @@ service:
 
 livenessProbe:
   path: "/healthz"
-  initialDelaySeconds: 3
-  timeoutSeconds: 
+  initialDelaySeconds: 10
+  timeoutSeconds: 10
   periodSeconds: 3
   successThreshold:
   failureThreshold:
 
 readinessProbe:
   path: "/healthz"
-  initialDelaySeconds: 3
-  timeoutSeconds: 
+  initialDelaySeconds: 10
+  timeoutSeconds: 10
   periodSeconds: 3
   successThreshold:
   failureThreshold:
@@ -27,6 +27,3 @@ readinessProbe:
 volume:
   mount:
     path: /tmp/html
-
-mylibchart:
-  configmap: 
